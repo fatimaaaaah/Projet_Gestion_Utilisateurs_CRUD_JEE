@@ -38,7 +38,6 @@ GestionUsers1/
 │ └── login.jsp # Formulaire de connexion
 └── lib/ # Librairies externes (MySQL Connector/J)
 
-
 ---
 
 ## ⚙️ Configuration
