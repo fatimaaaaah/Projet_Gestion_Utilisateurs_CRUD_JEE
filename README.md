@@ -19,6 +19,7 @@ La logique côté serveur est en **Servlets**, et les données sont stockées da
 ---
 
 ## 📂 Structure du projet
+```
 GestionUsers1/
 ├── src/
 │ ├── beans/ # Classe Java "Utilisateurs" avec getters/setters
@@ -37,7 +38,7 @@ GestionUsers1/
 │ ├── footer.jsp # Pied de page
 │ └── login.jsp # Formulaire de connexion
 └── lib/ # Librairies externes (MySQL Connector/J)
-
+```
 ---
 
 ## ⚙️ Configuration
