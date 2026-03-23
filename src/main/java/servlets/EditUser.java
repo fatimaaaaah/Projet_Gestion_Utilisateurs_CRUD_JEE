@@ -12,13 +12,11 @@ import dao.UtilisateurDao;
 @WebServlet("/Edit")
 public class EditUser extends HttpServlet {
 
-    // Affiche le formulaire EditUser
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         Utilisateurs u = UtilisateurDao.findById(id);
 
         if(u == null) {
-            // utilisateur non trouvé → message et retour à la liste
             request.getSession().setAttribute("message", "Utilisateur introuvable !");
             request.getSession().setAttribute("messageType", "error");
             response.sendRedirect("List");
@@ -28,7 +26,6 @@ public class EditUser extends HttpServlet {
         }
     }
 
-    // Traite la modification quand le formulaire est soumis
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         String nom = request.getParameter("nom");
