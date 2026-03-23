@@ -13,8 +13,7 @@
                 <nav>
                     <a href="List">Lister</a>
                     <a href="Add">Ajouter</a>
-                    <!-- On remplace le lien direct par un onclick -->
-                    <a href="#" onclick="openLogoutConfirm()">Se Déconnecter</a>
+                    <a href="#" onclick="openLogoutConfirm()">Se DÃ©connecter</a>
                 </nav>
             <%
                 } else {
@@ -31,7 +30,7 @@
 <div id="logoutConfirmBox" class="confirm-box">
     <div class="confirm-content">
         <h3>Gestion des utilisateurs</h3>
-        <p>Voulez-vous vraiment vous déconnecter ?</p>
+        <p>Voulez-vous vraiment vous dÃ©connecter ?</p>
         <div class="confirm-buttons">
             <button id="confirmLogout" class="btn-confirm">Oui</button>
             <button onclick="closeLogoutConfirm()" class="btn-cancel">Non</button>
